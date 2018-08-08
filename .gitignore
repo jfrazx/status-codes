@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+.nyc_output/
+tmp/
+
+.DS_Store
+Thumbs.db
+*.js
+*.log
+*.d.ts
+logs
+*.lcov
