@@ -1,10 +1,10 @@
 import { mergeEnums } from './helpers';
-import { IANA } from './http';
+import { HTTP } from './http';
 
-enum IIS_STATUS {
+export enum IIS {
   LOGIN_TIME_OUT = 440,
   RETRY_WITH = 449,
   REDIRECT = 451,
 }
 
-export const IIS = mergeEnums(IANA, IIS_STATUS);
+export const IIS_HTTP = mergeEnums(HTTP, IIS);

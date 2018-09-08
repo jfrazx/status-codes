@@ -1,6 +1,6 @@
 import { mergeEnums } from './helpers';
 
-export enum IANA {
+export enum HTTP {
   CONTINUE = 100,
   SWITCHING_PROTOCOLS = 101,
   PROCESSING = 102,
@@ -66,7 +66,10 @@ export enum IANA {
 }
 
 // https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#Unofficial_codes
-export enum UNOFFICIAL {
+/**
+ * Unofficial HTTP status codes, according to Wikipedia
+ */
+export enum HTTP_UNOFFICIAL {
   CHECKPOINT = 103,
   THIS_IS_FINE = 218,
   ENHANCE_YOUR_CALM = 420,
@@ -78,6 +81,7 @@ export enum UNOFFICIAL {
   NETWORK_READ_TIMEOUT_ERROR = 598,
 }
 
-export const HTTP = IANA;
-
-export const HTTP_EXTENDED = mergeEnums(IANA, UNOFFICIAL);
+/**
+ * The combination of HTTP and HTTP Unofficial
+ */
+export const HTTP_EXTENDED = mergeEnums(HTTP, HTTP_UNOFFICIAL);

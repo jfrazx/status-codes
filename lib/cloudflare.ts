@@ -1,7 +1,7 @@
 import { mergeEnums } from './helpers';
-import { IANA } from './http';
+import { HTTP } from './http';
 
-enum CLOUDFLARE_STATUS {
+export enum CLOUDFLARE {
   UNKNOWN_ERROR = 520,
   WEB_SERVER_IS_DOWN = 521,
   CONNECTION_TIMED_OUT = 522,
@@ -13,4 +13,4 @@ enum CLOUDFLARE_STATUS {
   ORIGIN_DNS_ERROR = 530,
 }
 
-export const CLOUDFLARE = mergeEnums(IANA, CLOUDFLARE_STATUS);
+export const CLOUDFLARE_HTTP = mergeEnums(HTTP, CLOUDFLARE);

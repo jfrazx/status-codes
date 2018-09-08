@@ -1,7 +1,7 @@
 {
   "name": "@status/codes",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "A collection of status code enums",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
