@@ -5,6 +5,7 @@ import {
   Apache,
   Braintree,
   Cloudflare,
+  FirebaseAuth,
   FTP,
   Http,
   IIS,
@@ -88,6 +89,11 @@ describe('Status Codes', () => {
     it('should have Cloudflare statuses', () => {
       expect(Cloudflare.InvalidSslCertificate).to.equal(526);
       expect(Cloudflare.OriginIsUnreachable).to.equal(523);
+    });
+
+    it('should have Firebase Auth statuses', () => {
+      expect(FirebaseAuth.InvalidUserToken).to.equal('auth/invalid-user-token');
+      expect(FirebaseAuth.TooManyRequests).to.equal('auth/too-many-requests');
     });
 
     it('should have FTP statuses', () => {

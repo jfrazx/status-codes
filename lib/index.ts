@@ -1,6 +1,7 @@
 export * from './apache';
 export * from './braintree';
 export * from './cloudflare';
+export * from './firebase';
 export * from './ftp';
 export * from './http';
 export * from './iis';

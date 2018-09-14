@@ -7,6 +7,7 @@ A collection of status code enums.
 Apache  
 Braintree  
 Cloudflare  
+Firebase \*wip  
 FTP  
 Http  
 IIS  
