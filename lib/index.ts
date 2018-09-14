@@ -5,5 +5,6 @@ export * from './ftp';
 export * from './http';
 export * from './iis';
 export * from './mongodb';
+export * from './mongoose';
 export * from './nginx';
 export * from './node';

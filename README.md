@@ -4,15 +4,16 @@ A collection of status code enums.
 
 ## Available Enums
 
-APACHE  
-BRAINTREE  
-CLOUDFLARE  
+Apache  
+Braintree  
+Cloudflare  
 FTP  
-HTTP  
+Http  
 IIS  
-MONGODB  
-NGINX  
-NODE
+MongoDB  
+Mongoose \*wip  
+Nginx  
+Node
 
 ## Install
 
@@ -25,9 +26,9 @@ yarn:
 ## Example Usage
 
 ```typescript
-import { HTTP } from '@status/codes';
+import { Http } from '@status/codes';
 
 export class NotFoundError extends Error {
-  readonly code = HTTP.NOT_FOUND;
+  readonly code = Http.NotFound;
 }
 ```

@@ -1,16 +1,16 @@
 import { mergeEnums } from './helpers';
-import { HTTP } from './http';
+import { Http } from './http';
 
-export enum CLOUDFLARE {
-  UNKNOWN_ERROR = 520,
-  WEB_SERVER_IS_DOWN = 521,
-  CONNECTION_TIMED_OUT = 522,
-  ORIGIN_IS_UNREACHABLE = 523,
-  A_TIMEOUT_OCCURRED = 524,
-  SSL_HANDSHAKE_FAILED = 525,
-  INVALID_SSL_CERTIFICATE = 526,
-  RAILGUN_ERROR = 527,
-  ORIGIN_DNS_ERROR = 530,
+export enum Cloudflare {
+  UnknownError = 520,
+  WebServerIsDown = 521,
+  ConnectionTimedOut = 522,
+  OriginIsUnreachable = 523,
+  ATimeoutOccurred = 524,
+  SslHandshakeFailed = 525,
+  InvalidSslCertificate = 526,
+  RailgunError = 527,
+  OriginDnsError = 530,
 }
 
-export const CLOUDFLARE_HTTP = mergeEnums(HTTP, CLOUDFLARE);
+export const CloudflareHttp = mergeEnums(Http, Cloudflare);

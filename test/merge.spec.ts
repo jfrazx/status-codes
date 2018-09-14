@@ -2,37 +2,39 @@ import { expect } from 'chai';
 import { mergeEnums } from '../lib/helpers';
 
 import {
-  APACHE,
-  BRAINTREE,
-  CLOUDFLARE,
+  Apache,
+  Braintree,
+  Cloudflare,
   FTP,
-  HTTP,
+  Http,
   IIS,
-  MONGODB,
-  NGINX,
-  NODE,
+  MongoDB,
+  MongoDBExit,
+  MongooseState,
+  Nginx,
+  Node,
 } from '../lib';
 
 enum Move {
-  forward,
-  backward,
-  left,
-  right,
+  Forward,
+  Backward,
+  Left,
+  Right,
 }
 
 enum Pets {
-  cat = 6,
-  dog = 23,
-  fish = 49,
-  wombat = 100,
-  crab,
+  Cat = 6,
+  Dog = 23,
+  Fish = 49,
+  Wombat = 100,
+  Crab,
 }
 
 enum Color {
-  green,
-  red = 6,
-  yellow,
-  blue = 2,
+  Green,
+  Red = 6,
+  Yellow,
+  Blue = 2,
 }
 
 describe('Status Codes', () => {
@@ -47,8 +49,8 @@ describe('Status Codes', () => {
       const merged = mergeEnums(Move, Pets);
       const lenr = Object.keys(merged).length;
 
-      expect(merged.crab).to.equal(101);
-      expect(merged.forward).to.equal(0);
+      expect(merged.Crab).to.equal(101);
+      expect(merged.Forward).to.equal(0);
       expect(lenr).to.equal(len1 + len2);
     });
 
@@ -61,61 +63,71 @@ describe('Status Codes', () => {
 
       const merged = mergeEnums(Move, Color);
 
-      expect(merged.forward).to.equal(merged.green);
-      expect(merged[0]).to.equal('green');
-      expect(merged[0]).to.not.equal('forward');
-      expect(merged.left).to.equal(merged.blue);
-      expect(merged[2]).to.equal('blue');
-      expect(merged[2]).to.not.equal('left');
+      expect(merged.Forward).to.equal(merged.Green);
+      expect(merged[0]).to.equal('Green');
+      expect(merged[0]).to.not.equal('Forward');
+      expect(merged.Left).to.equal(merged.Blue);
+      expect(merged[2]).to.equal('Blue');
+      expect(merged[2]).to.not.equal('Left');
 
       expect(Object.keys(merged)).to.have.length(14);
     });
   });
 
   describe('Enums', () => {
-    it('should have apache statuses', () => {
-      expect(APACHE.INTERNAL_SERVER_ERROR).to.equal(500);
-      expect(APACHE.CREATED).to.equal(201);
+    it('should have Apache statuses', () => {
+      expect(Apache.InternalServerError).to.equal(500);
+      expect(Apache.Created).to.equal(201);
     });
 
-    it('should have braintree statuses', () => {
-      expect(BRAINTREE.ALREADY_REFUNDED).to.equal(4004);
-      expect(BRAINTREE.PROCESSOR_DECLINED__POSSIBLE_STOLEN_CARD).to.equal(2013);
+    it('should have Braintree statuses', () => {
+      expect(Braintree.AlreadyRefunded).to.equal(4004);
+      expect(Braintree.ProcessorDeclinedPossibleStolenCard).to.equal(2013);
     });
 
-    it('should have cloudflare statuses', () => {
-      expect(CLOUDFLARE.INVALID_SSL_CERTIFICATE).to.equal(526);
-      expect(CLOUDFLARE.ORIGIN_IS_UNREACHABLE).to.equal(523);
+    it('should have Cloudflare statuses', () => {
+      expect(Cloudflare.InvalidSslCertificate).to.equal(526);
+      expect(Cloudflare.OriginIsUnreachable).to.equal(523);
     });
 
-    it('should have ftp statuses', () => {
-      expect(FTP.AUTHENTICATION_MECHANISM_ACCEPTED).to.equal(234);
-      expect(FTP.RESTART_MARKER_REPLAY).to.equal(110);
+    it('should have FTP statuses', () => {
+      expect(FTP.AuthenticationMechanismAccepted).to.equal(234);
+      expect(FTP.RestartMarkerReplay).to.equal(110);
     });
 
-    it('should have http statuses', () => {
-      expect(HTTP.SEE_OTHER).to.equal(303);
-      expect(HTTP.UNAVAILABLE_FOR_LEGAL_REASONS).to.equal(451);
+    it('should have Http statuses', () => {
+      expect(Http.SeeOther).to.equal(303);
+      expect(Http.UnavailableForLegalReasons).to.equal(451);
     });
 
-    it('should have iis statuses', () => {
-      expect(IIS.REDIRECT).to.equal(451);
-      expect(IIS.RETRY_WITH).to.equal(449);
+    it('should have IIS statuses', () => {
+      expect(IIS.Redirect).to.equal(451);
+      expect(IIS.RetryWith).to.equal(449);
     });
 
-    it('should have mongodb statues', () => {
-      expect(MONGODB.UNAUTHORIZED).to.equal(13);
-      expect(MONGODB.TOO_MANY_MATCHING_DOCUMENTS).to.equal(170);
+    it('should have MongoDB statues', () => {
+      expect(MongoDB.Unauthorized).to.equal(13);
+      expect(MongoDB.TooManyMatchingDocuments).to.equal(170);
     });
 
-    it('should have nginx statuses', () => {
-      expect(NGINX.INSUFFICIENT_STORAGE).to.equal(507);
-      expect(NGINX.MISDIRECTED_REQUEST).to.equal(421);
+    it('should have MongoDB Exit statuses', () => {
+      expect(MongoDBExit.OptionsError).to.equal(2);
+      expect(MongoDBExit.SystemExitUncleanShutdown).to.equal(14);
     });
 
-    it('should have node statuses', () => {
-      expect(NODE.LOOP_DETECTED).to.equal(508);
-      expect(NODE.PAYLOAD_TOO_LARGE).to.equal(413);
+    it('should have Mongoose State statuses', () => {
+      expect(MongooseState.Connected).to.equal(1);
+      expect(MongooseState.Uninitialized).to.equal(99);
+    });
+
+    it('should have Nginx statuses', () => {
+      expect(Nginx.InsufficientStorage).to.equal(507);
+      expect(Nginx.MisdirectedRequest).to.equal(421);
+    });
+
+    it('should have Node statuses', () => {
+      expect(Node.LoopDetected).to.equal(508);
+      expect(Node.PayloadTooLarge).to.equal(413);
     });
   });
 });
