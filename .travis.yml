@@ -9,7 +9,6 @@ node_js:
   - '10'
   - '9'
   - '8'
-  - '6'
 before_script:
   - npm prune
 script:
@@ -17,7 +16,7 @@ script:
   - npm run coverage:check
   - npm run coverage:report
   - npm run coverage:post
-after_script: 
+after_script:
   - npm run tsc:declarations
 deploy:
   provider: script
