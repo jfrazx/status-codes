@@ -11,13 +11,12 @@ node_js:
   - '8'
 before_script:
   - npm prune
+  - npm run tsc:declarations
 script:
   - npm run coverage:test
   - npm run coverage:check
   - npm run coverage:report
   - npm run coverage:post
-after_script:
-  - npm run tsc:declarations
 deploy:
   provider: script
   skip_cleanup: true
