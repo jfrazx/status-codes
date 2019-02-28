@@ -6,13 +6,13 @@ cache:
 notifications:
   email: false
 node_js:
+  - '11'
   - '10'
-  - '9'
   - '8'
 before_script:
   - npm prune
-  - npm run tsc:declarations
 script:
+  - npm run tsc:declarations
   - npm run coverage:test
   - npm run coverage:check
   - npm run coverage:report

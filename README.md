@@ -1,20 +1,24 @@
 # Status Codes
 
+![npm (scoped)](https://img.shields.io/npm/v/@status/codes.svg)
+![NPM](https://img.shields.io/npm/l/@status/codes.svg)
+
 A collection of status code enums.
 
 ## Available Enums
 
-Apache  
-Braintree  
-Cloudflare  
-Firebase \*wip  
-FTP  
-Http  
-IIS  
-MongoDB  
-Mongoose \*wip  
-Nginx  
-Node
+- Apache
+- Braintree
+- Cloudflare
+- Firebase \*wip
+- FTP
+- Http
+- IIS
+- MongoDB
+- Mongoose \*wip
+- Nginx
+- Node
+- Twitter
 
 ## Install
 

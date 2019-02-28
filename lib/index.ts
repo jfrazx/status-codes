@@ -9,3 +9,4 @@ export * from './mongodb';
 export * from './mongoose';
 export * from './nginx';
 export * from './node';
+export * from './twitter';

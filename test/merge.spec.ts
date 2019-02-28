@@ -14,6 +14,8 @@ import {
   MongooseState,
   Nginx,
   Node,
+  TwitterHttp,
+  TwitterErrors,
 } from '../lib';
 
 enum Move {
@@ -134,6 +136,16 @@ describe('Status Codes', () => {
     it('should have Node statuses', () => {
       expect(Node.LoopDetected).to.equal(508);
       expect(Node.PayloadTooLarge).to.equal(413);
+    });
+
+    it('should have Twitter HTTP statuses', () => {
+      expect(TwitterHttp.EnhanceYourCalm).to.equal(420);
+      expect(TwitterHttp.Gone).to.equal(410);
+    });
+
+    it('should have Twitter Error statuses', () => {
+      expect(TwitterErrors.CallbackUrlNotApproved).to.equal(415);
+      expect(TwitterErrors.FollowLimitExceeded).to.equal(161);
     });
   });
 });
