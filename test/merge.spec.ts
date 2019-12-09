@@ -3,6 +3,7 @@ import { mergeEnums } from '../lib/helpers';
 
 import {
   Apache,
+  Auth0,
   Braintree,
   Cloudflare,
   FirebaseAuth,
@@ -81,6 +82,11 @@ describe('Status Codes', () => {
     it('should have Apache statuses', () => {
       expect(Apache.InternalServerError).to.equal(500);
       expect(Apache.Created).to.equal(201);
+    });
+
+    it('should have Auth0 statuses', () => {
+      expect(Auth0.Unauthorized).to.equal(401);
+      expect(Auth0.ServiceUnavailable).to.equal(503);
     });
 
     it('should have Braintree statuses', () => {

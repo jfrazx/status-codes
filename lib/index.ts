@@ -1,4 +1,5 @@
 export * from './apache';
+export * from './auth0';
 export * from './braintree';
 export * from './cloudflare';
 export * from './firebase';

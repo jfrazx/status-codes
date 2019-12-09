@@ -14,7 +14,7 @@ export enum MongoDBExit {
   UncaughtException = 100,
 }
 
-// https://github.com/mongodb/mongo/blob/master/src/mongo/base/error_codes.err
+// https://github.com/mongodb/mongo/blob/master/src/mongo/base/error_codes.yml
 
 export enum MongoDB {
   Ok = 0,
@@ -291,14 +291,15 @@ export enum MongoDB {
   InterruptedAtShutdown = 11600,
   Interrupted = 11601,
   InterruptedDueToStepDown = 11602,
-  OutOfDiskSpace = 14031,
-  KeyTooLong = 17280,
   BackgroundOperationInProgressForDatabase = 12586,
   BackgroundOperationInProgressForNamespace = 12587,
-  NotMasterOrSecondary = 13436,
-  NotMasterNoSlaveOk = 13435,
-  ShardKeyTooBig = 13334,
-  StaleConfig = 13388,
-  DatabaseDifferCase = 13297,
   ObsoletePrepareConfigsFailed = 13104,
+  MergeStageNoMatchingDocument = 13113,
+  DatabaseDifferCase = 13297,
+  StaleConfig = 13388,
+  ShardKeyTooBig = 13334,
+  NotMasterNoSlaveOk = 13435,
+  NotMasterOrSecondary = 13436,
+  OutOfDiskSpace = 14031,
+  KeyTooLong = 17280,
 }

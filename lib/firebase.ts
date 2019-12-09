@@ -1,8 +1,11 @@
+// https://firebase.google.com/docs/reference/js/firebase.auth.Error
+
 export enum FirebaseAuth {
   AppDeleted = 'auth/app-deleted',
   NotAuthorized = 'auth/app-not-authorized',
   ArgumentError = 'auth/argument-error',
   InvalidApiKey = 'auth/invalid-api-key',
+  InvalidTenantId = 'auth/invalid-tenant-id',
   InvalidUserToken = 'auth/invalid-user-token',
   NetworkRequestFailed = 'auth/network-request-failed',
   OperationNotAllowed = 'auth/operation-not-allowed',

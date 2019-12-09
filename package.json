@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
+    "compile": "tsc",
     "tsc:declarations": "tsc -d",
     "tslint": "tslint",
     "commit": "git-cz",

@@ -8,9 +8,10 @@ A collection of status code enums.
 ## Available Enums
 
 - Apache
+- Auth0
 - Braintree
 - Cloudflare
-- Firebase \*wip
+- FirebaseAuth
 - FTP
 - Http
 - IIS
