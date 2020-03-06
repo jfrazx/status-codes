@@ -1,16 +1,14 @@
 {
+  "extends": "@istanbuljs/nyc-config-typescript",
   "check-coverage": true,
   "per-file": true,
   "lines": 99,
   "statements": 99,
   "functions": 99,
   "branches": 99,
-  "include": ["lib/**/*js"],
-  "exclude": ["index.js", "**/*.spec.ts", "test", "coverage", "*.ts", "**/*.d.ts"],
   "reporter": ["lcov", "text-summary", "html"],
   "cache": true,
   "all": true,
   "report-dir": "./coverage",
-  "tmp-directory": ".nyc_output",
-  "extension": [".js"]
+  "tmp-directory": ".nyc_output"
 }
