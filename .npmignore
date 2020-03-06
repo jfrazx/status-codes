@@ -12,7 +12,7 @@ tmp/
 .travis.yml
 *.lcov
 *.map
-.nycrc
+.nycrc.json
 .releaserc
 *.ts
 
