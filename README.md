@@ -15,6 +15,7 @@ A collection of status code enums.
 - FTP
 - Http
 - IIS
+- IRC
 - Mocha
 - MongoDB
 - Mongoose \*wip

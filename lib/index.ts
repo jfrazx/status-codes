@@ -6,6 +6,7 @@ export * from './firebase';
 export * from './ftp';
 export * from './http';
 export * from './iis';
+export * from './irc';
 export * from './mocha';
 export * from './mongodb';
 export * from './mongoose';
