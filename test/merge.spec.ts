@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { mergeEnums } from '../lib/helpers';
+import { mergeEnums } from '../src/helpers';
 
 import {
   Apache,
@@ -17,7 +17,7 @@ import {
   Node,
   TwitterHttp,
   TwitterErrors,
-} from '../lib';
+} from '../src';
 
 enum Move {
   Forward,
