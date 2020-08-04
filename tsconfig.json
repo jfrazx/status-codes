@@ -11,6 +11,7 @@
     "noImplicitAny": true,
     "alwaysStrict": true,
     "moduleResolution": "node",
+    "removeComments": true,
     "baseUrl": "./",
     "typeRoots": ["node_modules/@types"],
     "esModuleInterop": true

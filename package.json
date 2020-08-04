@@ -2,7 +2,7 @@
   "name": "@status/codes",
   "version": "0.0.0-development",
   "description": "A collection of status code enums",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "tslint": "tslint",
     "commit": "git-cz",
