@@ -1,4 +1,4 @@
-// https://developer.twitter.com/en/docs/basics/response-codes
+// https://developer.twitter.com/en/support/twitter-api/error-troubleshooting
 
 export enum TwitterHttp {
   Ok = 200,
@@ -37,6 +37,8 @@ export enum TwitterErrors {
   SslRequired = 92,
   DirectMessageAccessDenied = 93,
   CredentialVerificationFailure = 99,
+  SpecifiedUserNotFoundInList = 109,
+  UserToRemoveNotAListMember = 110,
   AccountUpdateFailed = 120,
   OverCapacity = 130,
   InternalError = 131,
@@ -57,6 +59,9 @@ export enum TwitterErrors {
   BadAuthenticationData = 215,
   UnauthorizedResourceCredentials = 220,
   PossibleAutomatedRequest = 226,
+  /**
+   * Possibly deprecated
+   */
   UserMustVerifyLogin = 231,
   EndpointRetired = 251,
   CannotPerformWriteActions = 261,
@@ -69,11 +74,24 @@ export enum TwitterErrors {
   AlreadyRetweeted = 327,
   YouCannotSendMessagesToUser = 349,
   DirectMessageCharacterLimitExceeded = 354,
-  SubscriptionAleadyExists = 355,
+  SubscriptionAlreadyExists = 355,
   ReplyToUnavailableTweet = 385,
   AttachmentTypeLimitExceeded = 386,
   UrlInvalid = 407,
   CallbackUrlNotApproved = 415,
   InvalidSuspendedApplication = 416,
   OobOnlyOauthSupport = 417,
+  TweetNoLongerAvailable = 421,
+  TweetUnavailableForRuleViolations = 422,
+  SomeTweetActionsDisabledByTwitter = 425,
+  TweetAuthorRestrictedReplies = 433,
+}
+
+export enum TwitterWebhookErrors {
+  CouldNotAuthenticate = 32,
+  Forbidden = 200,
+  WebhookURIDoesNotMeetRequirements = 214,
+  HighLatency = 214,
+  TooManyResourcesAlreadyCreated = 214,
+  AppCannotPerformWriteAccess = 261,
 }

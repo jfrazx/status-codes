@@ -8,9 +8,9 @@ export enum MongoDBExit {
   InstallationIssue = 5,
   WindowsShutdownEvent = 12,
   SystemExitUncleanShutdown = 14,
-  WindowsWsastartupFailedNtServiceError = 20,
+  WindowsWsaStartupFailedNtServiceError = 20,
   ListenError = 48,
-  IncompatibleDatafiles = 62,
+  IncompatibleDataFiles = 62,
   UncaughtException = 100,
 }
 
@@ -339,5 +339,5 @@ export enum MongoDB {
   NotMasterNoSlaveOk = 13435,
   NotMasterOrSecondary = 13436,
   OutOfDiskSpace = 14031,
-  OSBELETE_KeyTooLong = 17280,
+  OBSOLETE_KeyTooLong = 17280,
 }

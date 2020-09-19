@@ -1,6 +1,8 @@
+// https://www.alien.net.au/irc/irc2numerics.html
+
 export enum IRC {
   /**
-   * @todo define this constant
+   * The first message sent after client registration. The text used varies widely
    */
   RPL_WELCOME = '001',
 
@@ -23,6 +25,16 @@ export enum IRC {
    * @todo defined this constant
    */
   RPL_ISUPPORT = '005',
+
+  /**
+   * @todo defined this constant
+   */
+  RPL_MAP = '006',
+
+  /**
+   * @todo defined this constant
+   */
+  RPL_MAPEND = '007',
 
   /**
    * Used to indicate the nickname parameter supplied to a command is

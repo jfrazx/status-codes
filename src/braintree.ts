@@ -58,7 +58,7 @@ export enum Braintree {
   InvalidTransactionDivisionNumber = 2055,
   TransactionAmountExceedsTheTransactionDivisionLimit = 2056,
   IssuerOrCardholderHasPutARestrictionOnTheCard = 2057,
-  MerchantNotMastercardSecurecodeEnabled = 2058,
+  MerchantNotMastercardSecureCodeEnabled = 2058,
   AddressVerificationFailed = 2059,
   AddressVerificationAndCardSecurityCodeFailed = 2060,
   InvalidTransactionData = 2061,

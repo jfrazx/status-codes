@@ -1,0 +1,27 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "mastercard",
+    "BSON",
+    "sharded",
+    "unprocessable",
+    "oplog",
+    "braintree",
+    "paypal",
+    "favorited",
+    "uncatchable",
+    "linearizable",
+    "reentrancy",
+    "ftdc",
+    "hotlinking",
+    "railgun",
+    "codecov"
+  ],
+  "ignoreRegExpList": [
+    "/from '[a-zA-Z]'/",
+    "/\"name\": \"[a-zA-Z]+\"/",
+    "/\"[a-zA-Z]*\": \"1.0.0\"/",
+    "/YY[YMD hms]+/"
+  ]
+}

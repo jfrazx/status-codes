@@ -10,6 +10,8 @@ import {
   FTP,
   Http,
   IIS,
+  IRC,
+  Mocha,
   MongoDB,
   MongoDBExit,
   MongooseState,
@@ -115,8 +117,8 @@ describe('Status Codes', () => {
     });
 
     it('should have IIS statuses', () => {
-      expect(IIS.Redirect).to.equal(451);
-      expect(IIS.RetryWith).to.equal(449);
+      expect(IIS.AccessDeniedHostnameRestriction).to.equal(401.503);
+      expect(IIS.ApplicationIsShuttingDownOnTheWebServer).to.equal(500.11);
     });
 
     it('should have MongoDB statues', () => {
@@ -152,6 +154,18 @@ describe('Status Codes', () => {
     it('should have Twitter Error statuses', () => {
       expect(TwitterErrors.CallbackUrlNotApproved).to.equal(415);
       expect(TwitterErrors.FollowLimitExceeded).to.equal(161);
+    });
+
+    it('should have IRC statuses', () => {
+      expect(IRC.RPL_BANLIST).to.equal('367');
+      expect(IRC.RPL_WELCOME).to.equal('001');
+    });
+
+    it('should have Mocha statuses', () => {
+      expect(Mocha.NoFilesMatchPattern).to.equal(
+        'ERR_MOCHA_NO_FILES_MATCH_PATTERN',
+      );
+      expect(Mocha.InvalidReporter).to.equal('ERR_MOCHA_INVALID_REPORTER');
     });
   });
 });

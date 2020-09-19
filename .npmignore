@@ -15,10 +15,12 @@ tmp/
 .nycrc.json
 .releaserc
 *.ts
+*.log
 
 yarn.lock
 tslint.json
 tsconfig.json
+cspell.json
 
 !*.d.ts
 
