@@ -1,11 +1,11 @@
 import { expect } from 'chai';
 import { mergeEnums } from '../src/helpers';
-
 import {
   Apache,
   Auth0,
   Braintree,
   Cloudflare,
+  CloudflareHttp,
   FirebaseAuth,
   FTP,
   Http,
@@ -17,6 +17,7 @@ import {
   MongooseState,
   Nginx,
   Node,
+  PG,
   TwitterHttp,
   TwitterErrors,
 } from '../src';
@@ -53,11 +54,11 @@ describe('Status Codes', () => {
       expect(len2).to.equal(10);
 
       const merged = mergeEnums(Move, Pets);
-      const lenr = Object.keys(merged).length;
+      const len3 = Object.keys(merged).length;
 
       expect(merged.Crab).to.equal(101);
       expect(merged.Forward).to.equal(0);
-      expect(lenr).to.equal(len1 + len2);
+      expect(len3).to.equal(len1 + len2);
     });
 
     it('should overwrite duplicate keys, but not the associated values', () => {
@@ -77,6 +78,14 @@ describe('Status Codes', () => {
       expect(merged[2]).to.not.equal('Left');
 
       expect(Object.keys(merged)).to.have.length(14);
+    });
+
+    it('should combine Cloudflare and Http enums', () => {
+      expect(CloudflareHttp.Ok).to.equal(200);
+      expect(CloudflareHttp.InternalServerError).to.equal(500);
+      expect(CloudflareHttp.ServiceTemporarilyAvailable).to.equal(503);
+      expect(CloudflareHttp.DNSProhibitedIP).to.equal(1000);
+      expect(CloudflareHttp.CacheConnectionLimit).to.equal(1200);
     });
   });
 
@@ -144,6 +153,11 @@ describe('Status Codes', () => {
     it('should have Node statuses', () => {
       expect(Node.LoopDetected).to.equal(508);
       expect(Node.PayloadTooLarge).to.equal(413);
+    });
+
+    it('should have PostgreSQL statuses', () => {
+      expect(PG.ConnectionFailure).to.equal('08006');
+      expect(PG.UniqueViolation).to.equal('23505');
     });
 
     it('should have Twitter HTTP statuses', () => {

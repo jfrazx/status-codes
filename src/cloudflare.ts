@@ -1,9 +1,10 @@
-// https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors
-// https://support.cloudflare.com/hc/en-us/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors
-
 import { mergeEnums } from './helpers';
 import { Http } from './http';
 
+/**
+ * @see https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors
+ * @see https://support.cloudflare.com/hc/en-us/articles/360029779472-Troubleshooting-Cloudflare-1XXX-errors
+ */
 export enum Cloudflare {
   /**
    * 5XX Errors

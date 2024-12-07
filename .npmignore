@@ -1,14 +1,18 @@
-coverage/
+.parcel-cache/
 node_modules/
-test/
 .nyc_output/
+coverage/
+.github/
+test/
 tmp/
 
 *.log
 .DS_Store
 .eslintrc
+.eslintrc.yml
 .editorconfig
 .prettierrc
+.prettierignore
 .travis.yml
 *.lcov
 *.map

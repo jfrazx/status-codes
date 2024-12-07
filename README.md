@@ -21,6 +21,7 @@ A collection of status code enums.
 - Mongoose \*wip
 - Nginx
 - Node
+- Postgres
 - Twitter
 
 ## Install
@@ -47,10 +48,8 @@ Use with express:
 const { Http } = require('@status/codes');
 
 create(request, response) {
-  Model.create(request.body)
+  return Model.create(request.body)
     .then(instance => response.status(Http.Created).json(instance))
     .catch(error => response.status(Http.Conflict).json(error))
 }
-
-
 ```

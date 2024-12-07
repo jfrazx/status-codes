@@ -65,9 +65,9 @@ export enum Http {
   NetworkAuthenticationRequired = 511,
 }
 
-// https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#Unofficial_codes
 /**
  * Unofficial HTTP status codes, according to Wikipedia
+ * @see https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#Unofficial_codes
  */
 export enum HttpUnofficial {
   Checkpoint = 103,

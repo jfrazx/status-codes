@@ -1,5 +1,6 @@
-// https://firebase.google.com/docs/reference/js/firebase.auth.Error
-
+/**
+ * @see https://firebase.google.com/docs/reference/js/firebase.auth.Error
+ */
 export enum FirebaseAuth {
   AppDeleted = 'auth/app-deleted',
   NotAuthorized = 'auth/app-not-authorized',

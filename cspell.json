@@ -1,27 +1,42 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "language": "en",
+  "ignorePaths": [
+    "dist"
+  ],
   "words": [
-    "mastercard",
-    "BSON",
-    "sharded",
-    "unprocessable",
-    "oplog",
+    "Accessdenied",
+    "ASPNET",
+    "BANLIST",
     "braintree",
-    "paypal",
+    "BSON",
+    "codecov",
     "favorited",
-    "uncatchable",
-    "linearizable",
-    "reentrancy",
     "ftdc",
     "hotlinking",
+    "IPIS",
+    "ISAPI",
+    "jfrazx",
+    "linearizable",
+    "mastercard",
+    "oplog",
+    "paren",
+    "paypal",
+    "precoverage",
+    "prepush",
     "railgun",
-    "codecov"
+    "reentrancy",
+    "sharded",
+    "uncatchable",
+    "unprocessable"
   ],
   "ignoreRegExpList": [
     "/from '[a-zA-Z]'/",
     "/\"name\": \"[a-zA-Z]+\"/",
     "/\"[a-zA-Z]*\": \"1.0.0\"/",
     "/YY[YMD hms]+/"
+  ],
+  "ignoreWords": [
+    "lcov"
   ]
 }
