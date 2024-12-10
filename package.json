@@ -10,6 +10,7 @@
     "commit": "git-cz",
     "test": "cross-env TS_NODE_PROJECT='./test/tsconfig.json' mocha",
     "precompile": "rimraf dist",
+    "compile": "tsc",
     "prebuild": "rimraf dist",
     "build": "parcel build",
     "coverage:check": "nyc check-coverage",
