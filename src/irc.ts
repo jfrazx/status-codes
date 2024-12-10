@@ -104,7 +104,7 @@ export enum IRC {
    * 412 - 414 are returned by PRIVMSG to indicate that the message
    * wasn't delivered for some reason. ERR_NOTOPLEVEL and
    * ERR_WILDTOPLEVEL are errors that are returned when an invalid use of
-   * 'PRIVMSG $&lt;server&gt;' or 'PRIVMSG *&lt;host&gt;' is attempted.
+   * 'PRIVMSG $server' or 'PRIVMSG *host' is attempted.
    */
   ERR_WILDTOPLEVEL = '414',
 
@@ -441,9 +441,9 @@ export enum IRC {
   RPL_SUMMONING = '342',
 
   /**
-   * Reply by the server showing its version details. The &lt;version&gt;
-   * is the version of the software being used (including any patchlevel
-   * revisions) and the &lt;debuglevel&gt; is used to indicate if the
+   * Reply by the server showing its version details. The version
+   * is the version of the software being used (including any patch level
+   * revisions) and the debug level is used to indicate if the
    * server is running in 'debug mode'.
    *
    * The 'comments' field may contain any comments about the version or
@@ -461,7 +461,7 @@ export enum IRC {
    * message. The RPL_WHOREPLY is only sent if there is an appropriate
    * match to the WHO query. If there is a list of parameters supplied
    * with a WHO 'message', a RPL_ENDOFWHO must be sent after processing
-   * each list item with &lt;name&gt; being the item.
+   * each list item with name being the item.
    */
   RPL_ENDOFWHO = '315',
 
@@ -512,7 +512,7 @@ export enum IRC {
    * When listing the active 'bans' for a given 'channel', a server is
    * required to send the list back using the RPL_BANLIST and
    * RPL_ENDOFBANLIST messages. A separate RPL_BANLIST is sent for each
-   * active banid. After the banids have been listed (or if none present)
+   * active ban id. After the ban ids have been listed (or if none present)
    * a RPL_ENDOFBANLIST must be sent.
    */
   RPL_ENDOFBANLIST = '368',

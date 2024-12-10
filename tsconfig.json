@@ -1,21 +1,24 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es2017", "dom"],
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "./build",
     "strict": true,
-    "noImplicitAny": true,
-    "alwaysStrict": true,
-    "moduleResolution": "node",
-    "removeComments": true,
     "baseUrl": "./",
-    "typeRoots": ["node_modules/@types"],
-    "esModuleInterop": true
+    "target": "es6",
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
+    "module": "NodeNext",
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "lib": ["esnext", "DOM"],
+    "noUnusedParameters": true,
+    "moduleResolution": "NodeNext",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
-  "exclude": ["test"]
+  "include": ["src"]
 }

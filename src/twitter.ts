@@ -1,5 +1,6 @@
-// https://developer.twitter.com/en/support/twitter-api/error-troubleshooting
-
+/**
+ * @see https://developer.twitter.com/en/support/twitter-api/error-troubleshooting
+ */
 export enum TwitterHttp {
   Ok = 200,
   NotModified = 304,
@@ -8,7 +9,12 @@ export enum TwitterHttp {
   Forbidden = 403,
   NotFound = 404,
   NotAcceptable = 406,
+  ConnectionException = 409,
   Gone = 410,
+
+  /**
+   * @deprecated - Removed from most recent documentation
+   */
   EnhanceYourCalm = 420,
   UnprocessableEntity = 422,
   TooManyRequests = 429,
@@ -59,8 +65,9 @@ export enum TwitterErrors {
   BadAuthenticationData = 215,
   UnauthorizedResourceCredentials = 220,
   PossibleAutomatedRequest = 226,
+
   /**
-   * Possibly deprecated
+   * @deprecated
    */
   UserMustVerifyLogin = 231,
   EndpointRetired = 251,

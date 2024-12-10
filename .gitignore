@@ -1,14 +1,12 @@
+.parcel-cache/
 node_modules/
 .nyc_output/
 coverage/
 build/
+dist/
 tmp/
 
-.DS_Store
-Thumbs.db
 *.js
 *.log
-*.map
-*.d.ts
 logs
 *.lcov

@@ -1,5 +1,6 @@
-// https://auth0.com/docs/api/authentication#standard-error-responses
-
+/**
+ * @see https://auth0.com/docs/api/authentication#standard-error-responses
+ */
 export enum Auth0 {
   BadRequest = 400,
   Unauthorized = 401,

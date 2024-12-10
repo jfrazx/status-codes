@@ -1,5 +1,6 @@
-// https://articles.braintreepayments.com/control-panel/transactions/declines#authorization-decline-codes
-
+/**
+ * @see https://articles.braintreepayments.com/control-panel/transactions/declines#authorization-decline-codes
+ */
 export enum Braintree {
   DoNotHonor = 2000,
   InsufficientFunds = 2001,

@@ -1,5 +1,6 @@
-// https://mochajs.org/#error-codes
-
+/**
+ * @see https://mochajs.org/#error-codes
+ */
 export enum Mocha {
   InvalidArgType = 'ERR_MOCHA_INVALID_ARG_TYPE',
   InvalidArgValue = 'ERR_MOCHA_INVALID_ARG_VALUE',

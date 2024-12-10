@@ -9,11 +9,9 @@
  * @param {R} derived
  * @returns {(T & R)}
  */
-export function mergeEnums<T extends object, R extends object>(
-  base: T,
-  derived: R,
-): T & R {
-  // the 'any' type is apparently necessary as TypeScript freaks out with error:
-  // Spread types may only be created from object types.
-  return { ...(base as any), ...(derived as any) };
+export function mergeEnums<
+  T extends Record<string, any>,
+  R extends Record<string, any>,
+>(base: T, derived: R): Omit<T, keyof R> & R {
+  return { ...base, ...derived };
 }

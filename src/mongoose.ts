@@ -1,5 +1,6 @@
-// https://github.com/Automattic/mongoose/blob/master/lib/connectionstate.js
-
+/**
+ * @see https://github.com/Automattic/mongoose/blob/master/lib/connectionstate.js
+ */
 export enum MongooseState {
   Disconnected,
   Connected,

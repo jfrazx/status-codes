@@ -1,7 +1,9 @@
-// https://docs.mongodb.com/manual/reference/exit-codes/
-
+/**
+ * @see https://docs.mongodb.com/manual/reference/exit-codes/
+ */
 export enum MongoDBExit {
   SuccessfulExit = 0,
+  GenericFailure = 1,
   OptionsError = 2,
   HostnameMismatch = 3,
   VersionMismatch = 4,
@@ -10,12 +12,18 @@ export enum MongoDBExit {
   SystemExitUncleanShutdown = 14,
   WindowsWsaStartupFailedNtServiceError = 20,
   ListenError = 48,
+  ProcessForkFailed = 50,
+  NoReadySignal = 51,
+  UnresponsiveFilesystem = 61,
   IncompatibleDataFiles = 62,
+  ProcessHealthCheckFailed = 87,
   UncaughtException = 100,
+  AuditLogRotationFailed = 102,
 }
 
-// https://github.com/mongodb/mongo/blob/master/src/mongo/base/error_codes.yml
-
+/**
+ * @see https://github.com/mongodb/mongo/blob/master/src/mongo/base/error_codes.yml
+ */
 export enum MongoDB {
   Ok = 0,
   InternalError = 1,
