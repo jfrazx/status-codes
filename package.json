@@ -7,7 +7,6 @@
   "module": "dist/module.mjs",
   "types": "dist/types.d.ts",
   "scripts": {
-    "commit": "git-cz",
     "test": "cross-env TS_NODE_PROJECT='./test/tsconfig.json' mocha",
     "precompile": "rimraf dist",
     "compile": "tsc",
