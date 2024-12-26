@@ -16,6 +16,7 @@
     "ALREADYREGISTRED",
     "Asax",
     "ASPNET",
+    "Automerge",
     "BADCHANNELKEY",
     "BANLIST",
     "BANNEDFROMCHAN",
@@ -182,5 +183,7 @@
     "/\"[a-zA-Z]*\": \"1.0.0\"/",
     "/YY[YMD hms]+/"
   ],
-  "ignoreWords": ["lcov"]
+  "ignoreWords": [
+    "lcov"
+  ]
 }
