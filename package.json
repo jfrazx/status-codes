@@ -63,7 +63,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^9.1.7",
-    "mocha": "^10.8.2",
+    "mocha": "^11.0.0",
     "npm-check": "^6.0.1",
     "nyc": "^17.1.0",
     "parcel": "^2.13.2",
