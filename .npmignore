@@ -11,6 +11,7 @@ tmp/
 .eslintrc
 .eslintrc.yml
 .editorconfig
+.parcelrc
 .prettierrc
 .prettierignore
 .travis.yml
@@ -24,6 +25,7 @@ tmp/
 yarn.lock
 tslint.json
 tsconfig.json
+renovate.json
 cspell.json
 
 !*.d.ts
