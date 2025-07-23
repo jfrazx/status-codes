@@ -29,7 +29,8 @@
   },
   "exports": {
     "import": "./dist/module.mjs",
-    "require": "./dist/main.js"
+    "require": "./dist/main.js",
+    "types": "./dist/types.d.ts"
   },
   "keywords": [
     "apache",
