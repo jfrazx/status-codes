@@ -56,7 +56,7 @@ export enum FirebaseAuthAdmin {
   InvalidPhotoUrl = 'auth/invalid-photo-url',
   InvalidProviderData = 'auth/invalid-provider-data',
   InvalidProviderId = 'auth/invalid-provider-id',
-  InvalidOauthResponsetype = 'auth/invalid-oauth-responsetype',
+  InvalidOauthResponseType = 'auth/invalid-oauth-responsetype',
   InvalidSessionCookieDuration = 'auth/invalid-session-cookie-duration',
   InvalidUid = 'auth/invalid-uid',
   InvalidUserImport = 'auth/invalid-user-import',

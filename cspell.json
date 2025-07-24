@@ -107,6 +107,7 @@
     "QLIST",
     "railgun",
     "reentrancy",
+    "responsetype",
     "SASLABORT",
     "SASLALREADYAUTH",
     "SASLERROR",
