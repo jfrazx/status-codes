@@ -12,6 +12,9 @@ A collection of status code enums.
 - Braintree
 - Cloudflare
 - FirebaseAuth
+- Fire3baseAdminAuth
+- FirebaseAnalytics
+- FirebaseMessaging
 - FTP
 - Http
 - IIS
