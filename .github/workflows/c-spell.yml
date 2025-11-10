@@ -20,7 +20,7 @@ jobs:
     if: ${{ !github.event.pull_request.draft }}
     steps:
       - name: Github checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup nodejs
         uses: actions/setup-node@v4
         with:
