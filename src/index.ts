@@ -13,4 +13,5 @@ export * from './mongoose';
 export * from './nginx';
 export * from './node';
 export * from './pg';
+export * from './prisma';
 export * from './twitter';

@@ -5,6 +5,7 @@ coverage/
 build/
 dist/
 tmp/
+.DS_STORE
 
 *.js
 *.log

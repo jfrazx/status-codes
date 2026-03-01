@@ -17,6 +17,7 @@ import {
   MongooseState,
   Nginx,
   Node,
+  PrismaError,
   PG,
   TwitterHttp,
   TwitterErrors,
@@ -158,6 +159,11 @@ describe('Status Codes', () => {
     it('should have PostgreSQL statuses', () => {
       expect(PG.ConnectionFailure).to.equal('08006');
       expect(PG.UniqueViolation).to.equal('23505');
+    });
+
+    it('should have PrismaError statuses', () => {
+      expect(PrismaError.QueryParameterLimitExceeded).to.equal('P2029');
+      expect(PrismaError.FullTextIndexNotFound).to.equal('P2030');
     });
 
     it('should have Twitter HTTP statuses', () => {
