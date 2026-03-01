@@ -7,13 +7,14 @@ on:
     types:
       - completed
 
+permissions:
+  packages: write
+  contents: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      packages: write
-      contents: write
 
     steps:
       - name: Checkout
@@ -33,4 +34,3 @@ jobs:
         run: npx semantic-release -b master -p @semantic-release/commit-analyzer -p @semantic-release/github -p @semantic-release/release-notes-generator -p @semantic-release/npm
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
