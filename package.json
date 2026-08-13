@@ -64,7 +64,7 @@
     "cross-env": "^10.0.0",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^8.57.0",
-    "eslint-config-love": "^43.0.1",
+    "eslint-config-love": "^155.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
