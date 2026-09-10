@@ -57,7 +57,7 @@
     "@parcel/transformer-typescript-types": "^2.13.2",
     "@types/chai": "^5.0.0",
     "@types/mocha": "^10.0.10",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "chai": "^4.4.1",
     "codecov": "^3.8.3",
     "commitizen": "^4.3.1",
